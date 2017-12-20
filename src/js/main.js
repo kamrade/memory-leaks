@@ -17,9 +17,13 @@ document.getElementById('grow').addEventListener('click', grow);
 var row = document.getElementById('row');
 var ul  = document.getElementById('ul');
 
-// ul.parentNode.remove(ul);
+ul.parentNode.removeChild(ul);
 
 setTimeout(function() {
   console.dir(ul);
   console.dir(row);
 }, 1000);
+
+setTimeout(function() {
+  row.appendChild(ul);
+}, 3000);
