@@ -15,3 +15,11 @@ document.getElementById('grow').addEventListener('click', grow);
 // SECOND memory leak
 
 var row = document.getElementById('row');
+var ul  = document.getElementById('ul');
+
+// ul.parentNode.remove(ul);
+
+setTimeout(function() {
+  console.dir(ul);
+  console.dir(row);
+}, 1000);
